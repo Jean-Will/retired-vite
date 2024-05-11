@@ -1,0 +1,32 @@
+*{
+  margin:0;
+  padding: 0;
+}
+.container{
+  background-color: rgb(143, 141, 141);
+}
+
+
+  
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  background: linear-gradient(-45deg, #4CAF50, #2196F3, #FFEB3B, #FF5722, #FFEB3B, #2196F3, #4CAF50);
+  background-size: 400% 400%;
+  animation: backgroundAnimation 15s infinite;
+}
+
+input[type="text"], input[type="number"], input[type="submit"] {
+  background-color: rgba(0, 0, 0, 0.04); /* Cor secundária do Material UI */
+  color: black; /* Cor dos caracteres */
+}
